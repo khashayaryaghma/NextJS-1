@@ -1,11 +1,10 @@
-import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
-import Accordion from '../components/Accordion';
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import Accordion from "../../components/Accordion";
 
-test('renders Accordion and toggles content visibility', () => {
-  const title = 'Details';
-  const content = 'Here are some details.';
+test("renders Accordion and toggles content visibility", () => {
+  const title = "Details";
+  const content = "Here are some details.";
 
   render(<Accordion title={title} content={content} />);
 
